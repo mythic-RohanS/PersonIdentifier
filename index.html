@@ -1,0 +1,60 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Identifier</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kablammo&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/x-icon" href="nn.avif">
+<style>
+#container{
+    display: flex;
+    justify-content: center;
+}
+canvas{
+    position: absolute;
+    
+}
+body{
+    background-color: bisque;
+}
+h2{
+
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 480;
+    font-style: normal;
+    font-size: 22px;
+}
+h1{
+
+font-family: "Permanent Marker", cursive;
+font-weight: 555;
+font-style: normal;
+}
+#canvas{
+    padding-top: 0px;
+    border: 8.5px solid rgb(61, 61, 61);
+    border-radius: 5px;
+    width: 742px;
+}
+
+
+</style>
+</head>
+<center>
+
+    <h1>Person Identifier </h1>
+    <h2>This is An AI Based Person Identifier Webapp Which Will Tell Your Age,Gender And Emotions According to your Appearance</h2>
+    <canvas id="canvas"></canvas>
+
+    <div id="container">
+        <video id="video-feed" height="560" width="755" autoplay></video>
+    </div>
+</center>
+<script src="./face-api.min.js"></script>
+<script src="./scripts.js"></script>
